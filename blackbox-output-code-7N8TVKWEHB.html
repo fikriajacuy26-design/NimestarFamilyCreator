@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nimestar Family Creator</title>
+    <style>
+        /* Tema Ungu Galaksi: Gradien ungu gelap dengan efek bintang */
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background: linear-gradient(135deg, #4b0082, #191970, #000000); /* Gradien ungu galaksi */
+            color: #e0e0e0; /* Teks putih untuk kontras */
+            min-height: 100vh;
+            position: relative;
+        }
+        /* Efek bintang sederhana untuk tema galaksi */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(2px 2px at 20px 30px, #fff, transparent),
+                              radial-gradient(2px 2px at 40px 70px, #fff, transparent),
+                              radial-gradient(1px 1px at 90px 40px, #fff, transparent);
+            background-repeat: repeat;
+            background-size: 100px 100px;
+            opacity: 0.3;
+            pointer-events: none;
+        }
+        header { 
+            background: linear-gradient(90deg, #6a0dad, #4b0082); /* Gradien ungu header */
+            color: white; 
+            text-align: center; 
+            padding: 30px; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+            border-radius: 0 0 20px 20px;
+        }
+        nav { 
+            background: rgba(106, 13, 173, 0.8); /* Semi-transparan ungu */
+            padding: 15px; 
+            text-align: center; 
+            border-radius: 10px;
+            margin: 20px;
+        }
+        nav a { 
+            color: #f0f0f0; 
+            margin: 0 20px; 
+            text-decoration: none; 
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover { color: #ffd700; } /* Hover emas untuk efek */
+        section { 
+            padding: 25px; 
+            margin: 20px auto; 
+            background: rgba(255, 255, 255, 0.1); /* Semi-transparan putih */
+            border-radius: 15px; 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            max-width: 800px;
+            backdrop-filter: blur(5px); /* Efek blur untuk galaksi */
+        }
+        footer { 
+            text-align: center; 
+            padding: 15px; 
+            background: linear-gradient(90deg, #4b0082, #191970); 
+            color: white; 
+            border-radius: 20px 20px 0 0;
+        }
+        /* Responsivitas */
+        @media (max-width: 768px) {
+            nav a { display: block; margin: 10px 0; }
+            section { margin: 10px; padding: 15px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang di Nimestar Family Creator</h1>
+        <p>Komunitas Kreator di Alam Semesta Ungu Galaksi</p>
+    </header>
+    <nav>
+        <a href="#about">Tentang Kami</a>
+        <a href="#team">Owner & Admin</a>
+        <a href="#announcements">Pengumuman</a>
+        <a href="#social">Akun Sosial</a>
+    </nav>
+    
+    <!-- Bagian Tentang Komunitas -->
+    <section id="about">
+        <h2>Tentang Komunitas</h2>
+        <p>Nimestar Family Creator adalah komunitas kreator yang berkumpul untuk berbagi ide, kolaborasi, dan inspirasi. Kami fokus pada konten kreatif seperti video, desain, dan seni digital. Bergabunglah dan jadilah bagian dari keluarga kami di galaksi ungu ini!</p>
+    </section>
+    
+    <!-- Bagian Owner dan Admin -->
+    <section id="team">
+        <h2>Owner dan Admin</h2>
+        <ul>
+            <li><strong>Owner:</strong> Nama Owner - <a href="https://instagram.com/username">Instagram</a>, <a href="https://twitter.com/username">Twitter</a></li>
+            <li><strong>Admin 1:</strong> Nama Admin - <a href="https://instagram.com/username">Instagram</a></li>
+            <!-- Tambahkan lebih banyak sesuai kebutuhan -->
+        </ul>
+    </section>
+    
+    <!-- Bagian Pengumuman -->
+    <section id="announcements">
+        <h2>Pengumuman Komunitas</h2>
+        <div id="announcement-list">
+            <p><strong>1 Januari 2024:</strong> Selamat datang anggota baru! Acara mingguan dimulai besok.</p>
+            <!-- Tambahkan pengumuman dinamis jika perlu -->
+        </div>
+    </section>
+    
+    <!-- Bagian Akun Sosial Resmi -->
+    <section id="social">
+        <h2>Akun Sosial Resmi</h2>
+        <ul>
+            <li><a href="https://instagram.com/nimestarfamily">Instagram</a></li>
+            <li><a href="https://twitter.com/nimestarfamily">Twitter</a></li>
+            <li><a href="https://youtube.com/nimestarfamily">YouTube</a></li>
+        </ul>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Nimestar Family Creator. Dibuat dengan cinta di galaksi ungu.</p>
+    </footer>
+</body>
+</html>
